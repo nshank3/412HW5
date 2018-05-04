@@ -10,8 +10,8 @@ import numpy as np
 from sklearn.naive_bayes import GaussianNB
 def Naive_Bayes():
     print("Loading Data")
-    labels = np.loadtxt("labels_sentiment.csv")
-    features = np.loadtxt("features_sentiment.csv", delimiter=",")
+    labels = np.loadtxt("labels.csv")
+    features = np.loadtxt("features.csv", delimiter=",")
     #split into input(X) and output(Y) variables
     X = features[0:760,:]
     X_test = features[761:,:]
